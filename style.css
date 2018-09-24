@@ -1,0 +1,75 @@
+body{
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    min-height: 50vh;
+}
+
+.mainPage {
+    display: block;
+    width: 70px;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    text-decoration: none;
+    color:white;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block1, .block2 {
+    box-sizing: border-box;
+    //border: 1px solid red;
+    width: 50%;
+    padding: 30px;
+}
+.block1 .menuProject a {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px dashed #007bff;
+}
+.block1 .menuProject a:hover {
+    color: white;
+    background-color: #007bff;
+}
+.projects li {
+    margin-bottom: 15px;
+}
+
+.block1 label, .block2 label {
+    font-size: 1.5vw;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.block1>label:active, .block2>label:active {
+    box-shadow: 0 0 5px black;
+}
+input[type="checkbox"], input[type="checkbox"] + .projects{
+    display: none;
+}
+input[type="checkbox"] + form {
+    display: none;
+}
+
+label:hover {
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + .projects, input[type="checkbox"]:checked + form {
+    display: block;
+    margin-top: 15px;
+}
